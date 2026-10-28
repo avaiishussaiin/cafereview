@@ -11,11 +11,14 @@ include "database.php";
 $review_id = $_GET['id'];
 $user_id = $_SESSION['user_id'];
 
-// select reviews for their own user, if its not theirs they cant edit them.
-$result = $conn->query("SELECT * FROM reviews WHERE review_id='$review_id' AND user_id='$user_id'");
+//$result = $conn->query("SELECT * FROM reviews WHERE review_id='$review_id' AND user_id='$user_id'"); idor attack fix
+$result = $conn->query("SELECT * FROM reviews WHERE review_id='$review_id'");
+
 $review = $result->fetch_assoc();
+
+// if no review is found then say no reviews.
 if (!$review) {
-    die("You can only edit your own reviews. <a href='cafelist.php'>Cafe list</a>");
+    die("No Reviews. <a href='cafelist.php'>Cafe list</a>");
 }
 
 /*Gets the current review and then allowed editing and then if the file isn't 
@@ -32,12 +35,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     //updates the review when submitted.
-    $sql = "UPDATE reviews SET review_text='$review_text', file_name='$file_name' WHERE review_id='$review_id' AND user_id='$user_id'";
+
+    /*$sql = "UPDATE reviews SET review_text='$review_text', file_name='$file_name' WHERE review_id='$review_id' AND user_id='$user_id'"; idor attack fix */ 
+    
+    // Deliberately vulnerable V1: any logged-in user can update this ID.
+    $sql = "UPDATE reviews SET review_text='$review_text', file_name='$file_name' WHERE review_id='$review_id'";
+    
     $conn->query($sql);
     echo "Review updated. <a href='cafereview.php?id=" . $review['cafe_id'] . "'>View review</a>";
 
     // Read the saved values again so the form displays the current review text.
-    $result = $conn->query("SELECT * FROM reviews WHERE review_id='$review_id' AND user_id='$user_id'");
+    //$result = $conn->query("SELECT * FROM reviews WHERE review_id='$review_id' AND user_id='$user_id'"); idor attack fix
+
+    $result = $conn->query("SELECT * FROM reviews WHERE review_id='$review_id'");
     $review = $result->fetch_assoc();
 }
 
