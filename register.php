@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $password = $_POST['password'];
 
     // A username must be available so each account has its own login. 
-    //this lookup also places raw input directly into SQL - need to protect it from SQL injection attacks.
+    // This lookup also places raw input directly into SQL - need to protect it from SQL injection attacks.
     $result = $conn->query("SELECT * FROM users WHERE username='$username'");
 
     if ($result->num_rows > 0) {
