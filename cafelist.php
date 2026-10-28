@@ -14,6 +14,7 @@ include "database.php";
 $result = $conn->query("SELECT * FROM cafes ORDER BY cafe_id");
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head><title>Cafe list</title></head>
@@ -22,11 +23,13 @@ $result = $conn->query("SELECT * FROM cafes ORDER BY cafe_id");
 
 <p>Hello <?php echo $_SESSION['first_name']; ?>.</p>
 
+<!-- unordered list of the cafes list.-->
 <ul>
 <?php
 // Each cafe links to its own page containing reviews and a submission form.
 while ($cafe = $result->fetch_assoc()) {
     echo "<li><a href='cafereview.php?id=" . $cafe['cafe_id'] . "'>";
+    // </li> is to create the bullet points.
     echo $cafe['cafe_name'] . "</a></li>";
 }
 ?>

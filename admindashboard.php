@@ -48,6 +48,7 @@ while ($review = $reviews->fetch_assoc()) {
         echo "<p><a href='uploads/" . $review['file_name'] . "'>View uploaded file</a></p>";
     }
     echo "<a href='admindeletereview.php?id=" . $review['review_id'] . "'>Delete this review</a>";
+    // Creates the gaps/lines between the reviews
     echo "<hr>";
 }
 ?>
