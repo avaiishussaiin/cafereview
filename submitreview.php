@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $file_name = '';
  
     // INSECURE: accept the original filename and any file contents/type. A repeated filename can overwrite an earlier uploaded file.
-    if ($_FILES['review_file']['name'] != '') {
+      if (isset($_FILES['review_file']) && $_FILES['review_file']['error'] === UPLOAD_ERR_OK) {
         $file_name = $_FILES['review_file']['name'];
         if (!move_uploaded_file($_FILES['review_file']['tmp_name'], "uploads/" . $file_name)) {
             die("Image upload failed.");
