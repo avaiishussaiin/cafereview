@@ -46,8 +46,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <label>Username:</label><br>
     <input type="text" name="username" required><br>
 
+    <!-- Added password field for login with type text instead of password to demonstrate SQLi vulnerability. -->
     <label>Password:</label><br>
-    <input type="password" name="password" required><br>
+    <input type="text" name="password" required><br>
 
     <input type="submit" value="Login">
 </form>
