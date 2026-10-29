@@ -1,0 +1,259 @@
+[Thu Oct 08 11:43:06.184419 2026] [:notice] [pid 53260:tid 8414642048] FastCGI: process manager initialized (pid 53260)
+[Thu Oct 08 11:43:06.185878 2026] [mpm_event:notice] [pid 53259:tid 8414642048] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Thu Oct 08 11:43:06.186045 2026] [core:notice] [pid 53259:tid 8414642048] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+objc[53294]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[53294]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Thu Oct 08 11:43:12.209801 2026] [fastcgi:error] [pid 53262:tid 6169489408] [client ::1:54582] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+objc[53296]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[53296]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Thu Oct 08 11:45:33.165336 2026] [fastcgi:error] [pid 53262:tid 6174076928] [client ::1:54588] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+objc[53298]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[53298]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Thu Oct 08 11:45:47.250771 2026] [fastcgi:error] [pid 53263:tid 6172356608] [client ::1:54592] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+objc[53920]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[53920]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Thu Oct 08 11:46:08.464741 2026] [fastcgi:error] [pid 53275:tid 6171209728] [client ::1:54662] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+[Thu Oct 08 13:55:37.334153 2026] [mpm_event:notice] [pid 53259:tid 8414642048] AH00491: caught SIGTERM, shutting down
+[Thu Oct 08 13:55:37.346025 2026] [:alert] [pid 53260:tid 8414642048] (4)Interrupted system call: FastCGI: read() from pipe failed (0)
+[Thu Oct 08 13:55:37.346909 2026] [:alert] [pid 53260:tid 8414642048] (4)Interrupted system call: FastCGI: the PM is shutting down, Apache seems to have disappeared - bye
+[Thu Oct 08 13:55:42.445860 2026] [:notice] [pid 61948:tid 8414642048] FastCGI: process manager initialized (pid 61948)
+[Thu Oct 08 13:55:42.446847 2026] [mpm_event:notice] [pid 61947:tid 8414642048] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Thu Oct 08 13:55:42.447004 2026] [core:notice] [pid 61947:tid 8414642048] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+objc[62054]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[62054]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Thu Oct 08 13:55:44.079171 2026] [fastcgi:error] [pid 61951:tid 6125744128] [client ::1:55962] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+objc[62056]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[62056]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Thu Oct 08 13:55:47.329677 2026] [fastcgi:error] [pid 61951:tid 6126891008] [client ::1:55966] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+[Thu Oct 08 23:03:06.362870 2026] [mpm_event:notice] [pid 61947:tid 8414642048] AH00491: caught SIGTERM, shutting down
+[Thu Oct 08 23:03:06.375085 2026] [:alert] [pid 61948:tid 8414642048] (4)Interrupted system call: FastCGI: read() from pipe failed (0)
+[Thu Oct 08 23:03:06.376274 2026] [:alert] [pid 61948:tid 8414642048] (4)Interrupted system call: FastCGI: the PM is shutting down, Apache seems to have disappeared - bye
+[Thu Oct 15 10:30:50.645120 2026] [:notice] [pid 8723:tid 8591884160] FastCGI: process manager initialized (pid 8723)
+[Thu Oct 15 10:30:50.645995 2026] [mpm_event:notice] [pid 8722:tid 8591884160] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Thu Oct 15 10:30:50.646255 2026] [core:notice] [pid 8722:tid 8591884160] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+objc[8751]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[8751]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Thu Oct 15 10:30:52.828558 2026] [fastcgi:error] [pid 8724:tid 6093467648] [client ::1:52074] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+objc[8753]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[8753]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Thu Oct 15 10:30:56.768586 2026] [fastcgi:error] [pid 8725:tid 6092894208] [client ::1:52076] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+objc[8752]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[8752]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Thu Oct 15 10:31:00.135369 2026] [fastcgi:error] [pid 8727:tid 6092894208] [client ::1:52078] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+[Thu Oct 15 14:22:01.117521 2026] [authz_core:error] [pid 8763:tid 6100348928] [client ::1:53291] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Thu Oct 15 14:22:26.073318 2026] [authz_core:error] [pid 8763:tid 6103789568] [client ::1:53301] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Thu Oct 15 14:22:38.807814 2026] [authz_core:error] [pid 8727:tid 6101495808] [client ::1:53302] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Thu Oct 15 14:24:52.261140 2026] [authz_core:error] [pid 8763:tid 6106656768] [client ::1:53306] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Thu Oct 15 14:53:27.227185 2026] [authz_core:error] [pid 8727:tid 6100348928] [client ::1:53373] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Thu Oct 15 14:53:29.364074 2026] [authz_core:error] [pid 8727:tid 6103216128] [client ::1:53373] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab2/.DS_Store, referer: http://localhost:8888/
+[Thu Oct 15 17:52:12.802163 2026] [mpm_event:notice] [pid 8722:tid 8591884160] AH00491: caught SIGTERM, shutting down
+[Thu Oct 15 17:52:12.815313 2026] [:alert] [pid 8723:tid 8591884160] (4)Interrupted system call: FastCGI: read() from pipe failed (0)
+[Thu Oct 15 17:52:12.816465 2026] [:alert] [pid 8723:tid 8591884160] (4)Interrupted system call: FastCGI: the PM is shutting down, Apache seems to have disappeared - bye
+[Tue Oct 20 11:06:42.478674 2026] [:notice] [pid 56787:tid 8591884160] FastCGI: process manager initialized (pid 56787)
+[Tue Oct 20 11:06:42.481666 2026] [mpm_event:notice] [pid 56786:tid 8591884160] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Tue Oct 20 11:06:42.482146 2026] [core:notice] [pid 56786:tid 8591884160] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+objc[56812]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[56812]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Tue Oct 20 11:06:45.782448 2026] [fastcgi:error] [pid 56791:tid 6169669632] [client ::1:63548] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+objc[56814]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[56814]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Tue Oct 20 11:06:54.244095 2026] [fastcgi:error] [pid 56820:tid 6170816512] [client ::1:63550] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+objc[56813]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[56813]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Tue Oct 20 11:07:00.007182 2026] [fastcgi:error] [pid 56820:tid 6171963392] [client ::1:63552] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+[Tue Oct 20 11:07:00.722251 2026] [authz_core:error] [pid 56791:tid 6173110272] [client ::1:63554] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 20 11:07:04.310570 2026] [authz_core:error] [pid 56791:tid 6173683712] [client ::1:63554] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab2/.DS_Store, referer: http://localhost:8888/
+[Tue Oct 20 11:07:05.498753 2026] [authz_core:error] [pid 56791:tid 6174257152] [client ::1:63554] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab2/Part2/.DS_Store, referer: http://localhost:8888/Lab2/
+[Tue Oct 20 11:09:32.374836 2026] [authz_core:error] [pid 56789:tid 6169669632] [client ::1:63562] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 20 11:09:34.372011 2026] [authz_core:error] [pid 56789:tid 6170243072] [client ::1:63562] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 20 11:14:03.369554 2026] [authz_core:error] [pid 56791:tid 6181711872] [client ::1:63583] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 20 11:14:05.714467 2026] [authz_core:error] [pid 56791:tid 6181138432] [client ::1:63583] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab2/.DS_Store, referer: http://localhost:8888/
+[Tue Oct 20 11:14:06.549015 2026] [authz_core:error] [pid 56791:tid 6182285312] [client ::1:63583] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab2/Part2/.DS_Store, referer: http://localhost:8888/Lab2/
+[Tue Oct 20 21:43:55.810106 2026] [mpm_event:notice] [pid 56786:tid 8591884160] AH00491: caught SIGTERM, shutting down
+[Tue Oct 20 21:43:55.823982 2026] [:alert] [pid 56787:tid 8591884160] (4)Interrupted system call: FastCGI: read() from pipe failed (0)
+[Tue Oct 20 21:43:55.826479 2026] [:alert] [pid 56787:tid 8591884160] (4)Interrupted system call: FastCGI: the PM is shutting down, Apache seems to have disappeared - bye
+[Wed Oct 21 10:15:31.521982 2026] [:notice] [pid 3288:tid 8220114816] FastCGI: process manager initialized (pid 3288)
+[Wed Oct 21 10:15:31.523122 2026] [mpm_event:notice] [pid 3287:tid 8220114816] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Wed Oct 21 10:15:31.523271 2026] [core:notice] [pid 3287:tid 8220114816] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+objc[3318]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[3318]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Wed Oct 21 10:15:36.542776 2026] [fastcgi:error] [pid 3292:tid 6136557568] [client ::1:50212] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+objc[3320]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[3320]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Wed Oct 21 10:15:37.220650 2026] [fastcgi:error] [pid 3290:tid 6150320128] [client ::1:50214] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+[Wed Oct 21 10:15:39.259249 2026] [authz_core:error] [pid 3292:tid 6137704448] [client ::1:50216] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Wed Oct 21 10:16:31.947972 2026] [authz_core:error] [pid 3370:tid 6141718528] [client ::1:50220] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Wed Oct 21 10:17:42.465154 2026] [authz_core:error] [pid 3370:tid 6141718528] [client ::1:50232] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab2/.DS_Store, referer: http://localhost:8888/
+[Wed Oct 21 10:17:59.313070 2026] [authz_core:error] [pid 3370:tid 6146306048] [client ::1:50235] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab2/Part2/.DS_Store, referer: http://localhost:8888/Lab2/
+[Wed Oct 21 10:20:39.238936 2026] [mpm_event:notice] [pid 3287:tid 8220114816] AH00491: caught SIGTERM, shutting down
+[Wed Oct 21 10:20:39.250614 2026] [:alert] [pid 3288:tid 8220114816] (4)Interrupted system call: FastCGI: read() from pipe failed (0)
+[Wed Oct 21 10:20:39.250894 2026] [:alert] [pid 3288:tid 8220114816] (4)Interrupted system call: FastCGI: the PM is shutting down, Apache seems to have disappeared - bye
+[Thu Oct 22 11:00:39.400379 2026] [:notice] [pid 3439:tid 8344305536] FastCGI: process manager initialized (pid 3439)
+[Thu Oct 22 11:00:39.401355 2026] [mpm_event:notice] [pid 3438:tid 8344305536] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Thu Oct 22 11:00:39.401730 2026] [core:notice] [pid 3438:tid 8344305536] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+[Thu Oct 22 11:02:28.232889 2026] [authz_core:error] [pid 3570:tid 6171226112] [client ::1:49812] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Thu Oct 22 11:02:39.982233 2026] [authz_core:error] [pid 3570:tid 6173519872] [client ::1:49814] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store, referer: http://localhost:8888/Lab3/
+[Thu Oct 22 11:02:41.830826 2026] [authz_core:error] [pid 3570:tid 6174666752] [client ::1:49814] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store, referer: http://localhost:8888/Lab3/
+[Thu Oct 22 11:03:04.348262 2026] [authz_core:error] [pid 3444:tid 6168358912] [client ::1:49815] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab2/.DS_Store, referer: http://localhost:8888/
+[Thu Oct 22 11:03:05.581506 2026] [authz_core:error] [pid 3444:tid 6168932352] [client ::1:49815] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab2/Part2/.DS_Store, referer: http://localhost:8888/Lab2/
+[Thu Oct 22 11:12:17.375503 2026] [authz_core:error] [pid 3442:tid 6172372992] [client ::1:49908] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab2/Part2/.DS_Store
+[Thu Oct 22 11:40:02.015772 2026] [authz_core:error] [pid 3570:tid 6170652672] [client ::1:50044] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab3/.DS_Store
+[Thu Oct 22 11:54:22.367356 2026] [authz_core:error] [pid 3442:tid 6163197952] [client ::1:50101] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab3/.DS_Store
+[Thu Oct 22 12:01:20.262664 2026] [mpm_event:notice] [pid 3438:tid 8344305536] AH00491: caught SIGTERM, shutting down
+[Thu Oct 22 12:01:20.274310 2026] [:alert] [pid 3439:tid 8344305536] (4)Interrupted system call: FastCGI: read() from pipe failed (0)
+[Thu Oct 22 12:01:20.275149 2026] [:alert] [pid 3439:tid 8344305536] (4)Interrupted system call: FastCGI: the PM is shutting down, Apache seems to have disappeared - bye
+[Thu Oct 22 13:18:33.146795 2026] [:notice] [pid 8942:tid 8344305536] FastCGI: process manager initialized (pid 8942)
+[Thu Oct 22 13:18:33.147719 2026] [mpm_event:notice] [pid 8938:tid 8344305536] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Thu Oct 22 13:18:33.147873 2026] [core:notice] [pid 8938:tid 8344305536] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+objc[9007]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[9007]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Thu Oct 22 13:18:36.796863 2026] [fastcgi:error] [pid 8945:tid 6168162304] [client ::1:50349] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+objc[9009]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[9009]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Thu Oct 22 13:18:44.198389 2026] [fastcgi:error] [pid 8945:tid 6169309184] [client ::1:50351] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+[Thu Oct 22 13:18:55.907008 2026] [authz_core:error] [pid 8996:tid 6169309184] [client ::1:50358] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Thu Oct 22 13:34:59.808964 2026] [authz_core:error] [pid 8996:tid 6176763904] [client ::1:50400] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Thu Oct 22 13:35:01.493174 2026] [authz_core:error] [pid 8996:tid 6177337344] [client ::1:50400] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab2/.DS_Store, referer: http://localhost:8888/
+[Thu Oct 22 14:18:44.081385 2026] [authz_core:error] [pid 8945:tid 6172176384] [client ::1:50538] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/lab2/.DS_Store
+[Thu Oct 22 15:29:28.708514 2026] [mpm_event:notice] [pid 8938:tid 8344305536] AH00491: caught SIGTERM, shutting down
+[Thu Oct 22 15:29:28.720143 2026] [:alert] [pid 8942:tid 8344305536] (4)Interrupted system call: FastCGI: read() from pipe failed (0)
+[Thu Oct 22 15:29:28.720403 2026] [:alert] [pid 8942:tid 8344305536] (4)Interrupted system call: FastCGI: the PM is shutting down, Apache seems to have disappeared - bye
+[Mon Oct 26 00:09:53.164988 2026] [:notice] [pid 47678:tid 8344305536] FastCGI: process manager initialized (pid 47678)
+[Mon Oct 26 00:09:53.165663 2026] [mpm_event:notice] [pid 47677:tid 8344305536] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Mon Oct 26 00:09:53.165919 2026] [core:notice] [pid 47677:tid 8344305536] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+[Mon Oct 26 00:10:01.712294 2026] [authz_core:error] [pid 47714:tid 6167408640] [client ::1:65498] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Mon Oct 26 00:10:03.523301 2026] [authz_core:error] [pid 47714:tid 6167982080] [client ::1:65498] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/cafetest/.DS_Store, referer: http://localhost:8888/
+[Mon Oct 26 00:10:05.632332 2026] [authz_core:error] [pid 47714:tid 6168555520] [client ::1:65498] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/cafetest/v1/.DS_Store, referer: http://localhost:8888/cafetest/
+[Mon Oct 26 00:11:30.869872 2026] [mpm_event:notice] [pid 47677:tid 8344305536] AH00491: caught SIGTERM, shutting down
+[Mon Oct 26 00:11:30.881506 2026] [:alert] [pid 47678:tid 8344305536] (2)No such file or directory: FastCGI: read() from pipe failed (0)
+[Mon Oct 26 00:11:30.881822 2026] [:alert] [pid 47678:tid 8344305536] (2)No such file or directory: FastCGI: the PM is shutting down, Apache seems to have disappeared - bye
+[Mon Oct 26 14:10:21.153009 2026] [:notice] [pid 52888:tid 8344305536] FastCGI: process manager initialized (pid 52888)
+[Mon Oct 26 14:10:21.154085 2026] [mpm_event:notice] [pid 52887:tid 8344305536] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Mon Oct 26 14:10:21.154712 2026] [core:notice] [pid 52887:tid 8344305536] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+[Mon Oct 26 14:10:30.611561 2026] [authz_core:error] [pid 52892:tid 6099365888] [client ::1:51456] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 07:53:20.288113 2026] [:notice] [pid 2160:tid 8485044096] FastCGI: process manager initialized (pid 2160)
+[Tue Oct 27 07:53:20.288777 2026] [mpm_event:notice] [pid 2159:tid 8485044096] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Tue Oct 27 07:53:20.289576 2026] [core:notice] [pid 2159:tid 8485044096] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+[Tue Oct 27 07:53:29.686741 2026] [authz_core:error] [pid 2190:tid 6139359232] [client ::1:49605] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 07:53:32.008468 2026] [authz_core:error] [pid 2190:tid 6139932672] [client ::1:49605] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/cafereview/.DS_Store, referer: http://localhost:8888/
+[Tue Oct 27 08:17:34.519922 2026] [mpm_event:notice] [pid 2159:tid 8485044096] AH00491: caught SIGTERM, shutting down
+[Tue Oct 27 08:17:34.531529 2026] [:alert] [pid 2160:tid 8485044096] (4)Interrupted system call: FastCGI: read() from pipe failed (0)
+[Tue Oct 27 08:17:34.531799 2026] [:alert] [pid 2160:tid 8485044096] (4)Interrupted system call: FastCGI: the PM is shutting down, Apache seems to have disappeared - bye
+[Tue Oct 27 10:32:11.920947 2026] [:notice] [pid 4752:tid 8485044096] FastCGI: process manager initialized (pid 4752)
+[Tue Oct 27 10:32:11.922153 2026] [mpm_event:notice] [pid 4751:tid 8485044096] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Tue Oct 27 10:32:11.922319 2026] [core:notice] [pid 4751:tid 8485044096] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+objc[4798]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[4798]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Tue Oct 27 10:32:14.551029 2026] [fastcgi:error] [pid 4753:tid 6169423872] [client ::1:50126] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+[Tue Oct 27 10:32:38.884636 2026] [authz_core:error] [pid 4753:tid 6170570752] [client ::1:50132] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 10:32:41.682246 2026] [authz_core:error] [pid 4753:tid 6171144192] [client ::1:50132] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/cafereview/.DS_Store, referer: http://localhost:8888/
+[Tue Oct 27 10:34:13.074694 2026] [authz_core:error] [pid 4753:tid 6178598912] [client ::1:50149] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 10:46:28.504870 2026] [authz_core:error] [pid 4753:tid 6171717632] [client ::1:50248] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 12:25:12.780933 2026] [authz_core:error] [pid 4756:tid 6177452032] [client ::1:50581] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 12:27:00.161961 2026] [authz_core:error] [pid 5019:tid 6176878592] [client 10.76.129.87:50673] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 12:27:28.296388 2026] [authz_core:error] [pid 5019:tid 6176305152] [client 10.76.131.8:34078] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 12:27:39.188240 2026] [authz_core:error] [pid 4756:tid 6178598912] [client 10.76.131.8:34086] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab3/.DS_Store, referer: http://10.76.129.87:8888/
+[Tue Oct 27 12:28:16.478457 2026] [authz_core:error] [pid 5019:tid 6179745792] [client 10.76.129.87:50676] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 12:28:17.113048 2026] [authz_core:error] [pid 5019:tid 6168276992] [client 10.76.129.87:50676] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 12:28:17.294279 2026] [authz_core:error] [pid 4756:tid 6182039552] [client ::1:50678] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 12:31:13.949969 2026] [authz_core:error] [pid 4756:tid 6172291072] [client ::1:50699] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 12:31:16.086505 2026] [authz_core:error] [pid 4756:tid 6172864512] [client ::1:50699] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab3/.DS_Store, referer: http://localhost:8888/
+[Tue Oct 27 12:34:30.451235 2026] [authz_core:error] [pid 5019:tid 6181466112] [client 10.76.131.8:59054] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab3/.DS_Store
+[Tue Oct 27 12:36:50.835686 2026] [authz_core:error] [pid 5019:tid 6177452032] [client 10.76.131.8:42370] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/Lab3/.DS_Store
+[Tue Oct 27 12:38:08.429636 2026] [authz_core:error] [pid 4755:tid 6170570752] [client 10.76.131.8:42940] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 12:38:10.101791 2026] [authz_core:error] [pid 4755:tid 6171144192] [client 10.76.131.8:42940] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/cafereview/.DS_Store, referer: http://10.76.129.87:8888/
+[Tue Oct 27 12:39:25.280514 2026] [authz_core:error] [pid 5019:tid 6175731712] [client 10.76.129.87:50776] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 12:43:17.878522 2026] [authz_core:error] [pid 4756:tid 6175158272] [client 10.76.131.8:38410] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 13:22:07.612350 2026] [authz_core:error] [pid 4755:tid 6175158272] [client 10.76.131.8:56414] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 13:22:33.842179 2026] [authz_core:error] [pid 5019:tid 6171144192] [client 10.76.131.8:37260] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 13:39:16.226035 2026] [authz_core:error] [pid 4756:tid 6178025472] [client ::1:51386] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 13:48:11.663011 2026] [authz_core:error] [pid 4756:tid 6171144192] [client 10.76.131.8:56092] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 14:25:31.700340 2026] [authz_core:error] [pid 4756:tid 6168276992] [client 10.76.131.8:46296] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 14:32:30.591385 2026] [authz_core:error] [pid 4755:tid 6168850432] [client 10.76.131.8:35750] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 14:33:15.453576 2026] [authz_core:error] [pid 5019:tid 6175158272] [client 10.76.131.8:56584] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 14:35:02.984145 2026] [authz_core:error] [pid 5019:tid 6179172352] [client 10.76.131.8:35152] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 14:41:32.926490 2026] [authz_core:error] [pid 4756:tid 6168276992] [client 10.76.131.8:55034] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 14:47:54.758924 2026] [authz_core:error] [pid 4756:tid 6178025472] [client ::1:51984] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 14:48:26.778948 2026] [authz_core:error] [pid 4756:tid 6182039552] [client ::1:51991] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 15:01:44.321818 2026] [authz_core:error] [pid 4755:tid 6173437952] [client 10.76.131.8:60292] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 15:07:56.546507 2026] [authz_core:error] [pid 5019:tid 6174584832] [client 10.76.131.8:41098] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 15:08:39.335000 2026] [authz_core:error] [pid 5019:tid 6168276992] [client 10.76.131.8:33834] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Tue Oct 27 15:13:32.969005 2026] [:notice] [pid 1519:tid 8232730496] FastCGI: process manager initialized (pid 1519)
+[Tue Oct 27 15:13:32.976262 2026] [mpm_event:notice] [pid 1518:tid 8232730496] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Tue Oct 27 15:13:32.976796 2026] [core:notice] [pid 1518:tid 8232730496] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+objc[1552]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[1552]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Tue Oct 27 15:13:37.185653 2026] [fastcgi:error] [pid 1524:tid 6096433152] [client ::1:49394] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+objc[1553]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[1553]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Tue Oct 27 15:14:37.045721 2026] [fastcgi:error] [pid 1524:tid 6098726912] [client ::1:49490] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+objc[1551]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[1551]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Tue Oct 27 15:14:39.140417 2026] [fastcgi:error] [pid 1524:tid 6101020672] [client ::1:49589] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+objc[1554]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[1554]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Tue Oct 27 15:14:39.893757 2026] [fastcgi:error] [pid 1579:tid 6097580032] [client ::1:49592] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+objc[1584]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[1584]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Tue Oct 27 15:14:42.675757 2026] [fastcgi:error] [pid 1524:tid 6103314432] [client ::1:49600] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+[Tue Oct 27 15:14:52.336101 2026] [mpm_event:notice] [pid 1518:tid 8232730496] AH00491: caught SIGTERM, shutting down
+[Tue Oct 27 15:14:52.349413 2026] [:alert] [pid 1519:tid 8232730496] (22)Invalid argument: FastCGI: read() from pipe failed (0)
+[Tue Oct 27 15:14:52.350102 2026] [:alert] [pid 1519:tid 8232730496] (22)Invalid argument: FastCGI: the PM is shutting down, Apache seems to have disappeared - bye
+[Tue Oct 27 15:15:06.466359 2026] [:notice] [pid 2027:tid 8232730496] FastCGI: process manager initialized (pid 2027)
+[Tue Oct 27 15:15:06.467112 2026] [mpm_event:notice] [pid 2024:tid 8232730496] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Tue Oct 27 15:15:06.471482 2026] [core:notice] [pid 2024:tid 8232730496] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+objc[2098]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[2098]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Tue Oct 27 15:15:08.924231 2026] [fastcgi:error] [pid 2030:tid 6102953984] [client ::1:49617] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+[Tue Oct 27 15:15:51.820014 2026] [mpm_event:notice] [pid 2024:tid 8232730496] AH00491: caught SIGTERM, shutting down
+[Tue Oct 27 15:15:51.831376 2026] [:alert] [pid 2027:tid 8232730496] (2)No such file or directory: FastCGI: read() from pipe failed (0)
+[Tue Oct 27 15:15:51.831638 2026] [:alert] [pid 2027:tid 8232730496] (2)No such file or directory: FastCGI: the PM is shutting down, Apache seems to have disappeared - bye
+[Wed Oct 28 08:00:51.475422 2026] [:notice] [pid 2949:tid 8306786176] FastCGI: process manager initialized (pid 2949)
+[Wed Oct 28 08:00:51.476197 2026] [mpm_event:notice] [pid 2948:tid 8306786176] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Wed Oct 28 08:00:51.476562 2026] [core:notice] [pid 2948:tid 8306786176] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+objc[2977]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[2977]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Wed Oct 28 08:00:53.657155 2026] [fastcgi:error] [pid 2950:tid 6097104896] [client ::1:49547] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+[Wed Oct 28 08:01:00.008879 2026] [authz_core:error] [pid 2951:tid 6098251776] [client ::1:49549] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Wed Oct 28 08:16:29.439802 2026] [authz_core:error] [pid 2953:tid 6105706496] [client ::1:49815] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Wed Oct 28 12:25:11.206814 2026] [mpm_event:notice] [pid 6634:tid 8170471296] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Wed Oct 28 12:25:11.208435 2026] [core:notice] [pid 6634:tid 8170471296] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+[Wed Oct 28 12:25:11.208303 2026] [:notice] [pid 6635:tid 8170471296] FastCGI: process manager initialized (pid 6635)
+objc[6666]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[6666]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Wed Oct 28 12:25:12.831482 2026] [fastcgi:error] [pid 6638:tid 6168653824] [client ::1:50359] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+objc[6668]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[6668]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Wed Oct 28 12:25:17.113153 2026] [fastcgi:error] [pid 6636:tid 6170947584] [client ::1:50361] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+[Wed Oct 28 12:25:20.109856 2026] [authz_core:error] [pid 6636:tid 6175535104] [client ::1:50364] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Wed Oct 28 12:26:16.050012 2026] [mpm_event:notice] [pid 6634:tid 8170471296] AH00491: caught SIGTERM, shutting down
+[Wed Oct 28 12:26:16.061586 2026] [:alert] [pid 6635:tid 8170471296] (22)Invalid argument: FastCGI: read() from pipe failed (0)
+[Wed Oct 28 12:26:16.061841 2026] [:alert] [pid 6635:tid 8170471296] (22)Invalid argument: FastCGI: the PM is shutting down, Apache seems to have disappeared - bye
+[Wed Oct 28 17:23:16.082742 2026] [:notice] [pid 11807:tid 8170471296] FastCGI: process manager initialized (pid 11807)
+[Wed Oct 28 17:23:16.083326 2026] [mpm_event:notice] [pid 11803:tid 8170471296] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Wed Oct 28 17:23:16.083624 2026] [core:notice] [pid 11803:tid 8170471296] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+objc[11884]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[11884]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Wed Oct 28 17:23:19.220745 2026] [fastcgi:error] [pid 11810:tid 6092664832] [client ::1:52510] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+[Wed Oct 28 17:23:29.230517 2026] [authz_core:error] [pid 11811:tid 6091517952] [client ::1:52513] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Wed Oct 28 19:42:17.789247 2026] [mpm_event:notice] [pid 11803:tid 8170471296] AH00491: caught SIGTERM, shutting down
+[Wed Oct 28 19:42:17.802738 2026] [:alert] [pid 11807:tid 8170471296] (4)Interrupted system call: FastCGI: read() from pipe failed (0)
+[Wed Oct 28 19:42:17.803640 2026] [:alert] [pid 11807:tid 8170471296] (4)Interrupted system call: FastCGI: the PM is shutting down, Apache seems to have disappeared - bye
+[Thu Oct 29 11:15:52.810431 2026] [:notice] [pid 5942:tid 8707281664] FastCGI: process manager initialized (pid 5942)
+[Thu Oct 29 11:15:52.811189 2026] [mpm_event:notice] [pid 5941:tid 8707281664] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Thu Oct 29 11:15:52.811360 2026] [core:notice] [pid 5941:tid 8707281664] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+objc[5973]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[5973]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Thu Oct 29 11:15:54.962136 2026] [fastcgi:error] [pid 5943:tid 6162280448] [client ::1:50441] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
+[Thu Oct 29 11:22:33.019964 2026] [authz_core:error] [pid 5989:tid 6168014848] [client ::1:50513] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Thu Oct 29 11:28:35.392471 2026] [authz_core:error] [pid 5944:tid 6168014848] [client ::1:50575] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Thu Oct 29 11:29:17.549965 2026] [authz_core:error] [pid 5944:tid 6171455488] [client ::1:50588] AH01630: client denied by server configuration: /Applications/MAMP/htdocs/.DS_Store
+[Thu Oct 29 11:29:55.087464 2026] [mpm_event:notice] [pid 5941:tid 8707281664] AH00491: caught SIGTERM, shutting down
+[Thu Oct 29 11:29:55.099445 2026] [:alert] [pid 5942:tid 8707281664] (4)Interrupted system call: FastCGI: read() from pipe failed (0)
+[Thu Oct 29 11:29:55.100335 2026] [:alert] [pid 5942:tid 8707281664] (4)Interrupted system call: FastCGI: the PM is shutting down, Apache seems to have disappeared - bye
+[Thu Oct 29 11:30:00.655077 2026] [:notice] [pid 7617:tid 8707281664] FastCGI: process manager initialized (pid 7617)
+[Thu Oct 29 11:30:00.655850 2026] [mpm_event:notice] [pid 7613:tid 8707281664] AH00489: Apache/2.4.66 (Unix) OpenSSL/1.1.1w mod_fastcgi/mod_fastcgi-SNAP-0910052141 configured -- resuming normal operations
+[Thu Oct 29 11:30:00.656010 2026] [core:notice] [pid 7613:tid 8707281664] AH00094: Command line: '/Applications/MAMP/Library/bin/httpd'
+objc[7680]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called.
+objc[7680]: +[NSPlaceholderString initialize] may have been in progress in another thread when fork() was called. We cannot safely call it or ignore it in the fork() child process. Crashing instead. Set a breakpoint on objc_initializeAfterForkError to debug.
+[Thu Oct 29 11:30:02.196762 2026] [fastcgi:error] [pid 7621:tid 6164721664] [client ::1:50593] FastCGI: incomplete headers (0 bytes) received from server "/Applications/MAMP/fcgi-bin/php.fcgi"
