@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html>
 <head><title>Login</title></head>
 <body>
-<h2>Cafe reviews no security updates.</h2>
+<h2>Cafe reviews WITH security updates Applied.</h2>
 <h3>Login</h3>
 
 <form action="index.php" method="POST">
