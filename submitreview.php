@@ -55,7 +55,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $conn->query($sql); */
 
     // fixed for ssrf vulnerability, now only allows https urls and rejects local file paths. 
-    
     elseif (!empty($_POST['review_image_url'])) {
     $image_url = $_POST['review_image_url'] ?? '';
 
