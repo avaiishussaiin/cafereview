@@ -24,11 +24,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     }
 
-    //ssrf vulnerability 
-    elseif (!empty($_POST['review_image_url'])) {
+    // created a restriction of types of items that can be uploaded. only images allowed.
+    /*if (
+    isset($_POST['review_image_url']) &&
+    $_POST['review_image_url'] !== ''
+) {
+    http_response_code(400);
+    exit('Image URLs are not supported. Please upload an image.');
+}*/
+
+    //ssrf vulnerability code, allows any file upladed and then fetches it from the server, allowing an attacker to fetch internal resources.
+    /*elseif (!empty($_POST['review_image_url'])) {
         $image_url = $_POST['review_image_url'];
  
-    // INSECURE: server blindly fetches whatever URL the user supplies — SSRF
+    // Iserver blindly fetches whatever URL the user supplies — SSRF
     $file_contents = @file_get_contents($image_url);
  
     if ($file_contents === false) {
@@ -43,7 +52,44 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
  
     $sql = "INSERT INTO reviews (user_id,cafe_id,review_text,file_name)
             VALUES ('$user_id','$cafe_id','$review_text','$file_name')";
-    $conn->query($sql);
+    $conn->query($sql); */
+
+    // fixed for ssrf vulnerability, now only allows https urls and rejects local file paths. 
+    
+    elseif (!empty($_POST['review_image_url'])) {
+    $image_url = $_POST['review_image_url'] ?? '';
+
+    // Requires a valid HTTPS URL; reject any other local filesystem filepaths.
+    if (
+        !is_string($image_url) ||
+        !preg_match('~\Ahttps://[^\s]+\z~i', $image_url) ||
+        filter_var($image_url, FILTER_VALIDATE_URL) === false
+    ) {
+        http_response_code(400);
+        exit('Please enter a valid HTTPS image URL.');
+    }
+
+    $file_contents = @file_get_contents($image_url);
+
+    if ($file_contents === false) {
+        die("Could not fetch the URL.");
+    }
+
+    $original_name = basename(parse_url($image_url, PHP_URL_PATH));
+    $file_name = 'fetched_' . time() . '_' . $original_name;
+
+    file_put_contents(
+        __DIR__ . "/uploads/" . $file_name,
+        $file_contents
+    );
+}
+
+$sql = "INSERT INTO reviews (user_id,cafe_id,review_text,file_name)
+        VALUES ('$user_id','$cafe_id','$review_text','$file_name')";
+
+$conn->query($sql);
+
+
  
     echo "Review submitted.<br><br>";
     echo "<a href='cafereview.php?id=$cafe_id'>Back to cafe reviews</a>";

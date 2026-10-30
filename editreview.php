@@ -8,12 +8,15 @@ if (!isset($_SESSION['login'])) {
 }
 
 include "database.php";
+
 $review_id = $_GET['id'];
+// Get the user_id from the session
 $user_id = $_SESSION['user_id'];
 
-//$result = $conn->query("SELECT * FROM reviews WHERE review_id='$review_id' AND user_id='$user_id'"); //idor attack fix
-$result = $conn->query("SELECT * FROM reviews WHERE review_id='$review_id'");
+// Idor fix, extra checks for user_id added to prevent other users accessing.
+$result = $conn->query("SELECT * FROM reviews WHERE review_id='$review_id' AND user_id='$user_id'"); //idor attack fix
 
+// fetch the review data 1 line at a time and stores it in an array called $review.
 $review = $result->fetch_assoc();
 
 // if no review is found then say no reviews.
@@ -35,19 +38,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     //updates the review when submitted.
-
-    //$sql = "UPDATE reviews SET review_text='$review_text', file_name='$file_name' WHERE review_id='$review_id' AND user_id='$user_id'"; // idor attack fix
-    
-    // Deliberately vulnerable V1: any logged-in user can update this ID.
-    $sql = "UPDATE reviews SET review_text='$review_text', file_name='$file_name' WHERE review_id='$review_id'";
+    // Idor fix, extra checks for user_id added to prevent other users accessing.
+    $sql = "UPDATE reviews SET review_text='$review_text', file_name='$file_name' WHERE review_id='$review_id' AND user_id='$user_id'"; // idor attack fix
     
     $conn->query($sql);
     echo "Review updated. <a href='cafereview.php?id=" . $review['cafe_id'] . "'>View review</a>";
 
-    // Read the saved values again so the form displays the current review text.
-    //$result = $conn->query("SELECT * FROM reviews WHERE review_id='$review_id' AND user_id='$user_id'"); //idor attack fix
-
-    $result = $conn->query("SELECT * FROM reviews WHERE review_id='$review_id'");
+    // Idor fix, extra checks for user_id added to prevent other users accessing.
+    $result = $conn->query("SELECT * FROM reviews WHERE review_id='$review_id' AND user_id='$user_id'"); //idor attack fix
     $review = $result->fetch_assoc();
 }
 
@@ -62,7 +60,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     
 <!-- INSECURE: the saved text is printed directly into the textarea. -->
     <label>My review:</label><br>
-    <textarea name="review_text" rows="5" cols="50" required><?php echo $review['review_text']; ?></textarea><br><br>
+    <textarea name="review_text" rows="5" cols="50" required>
+        
+    <?php 
+    // Securely output the review text to prevent XSS attacks
+        echo htmlspecialchars($review['review_text']);
+    ?></textarea><br><br>
 
     <?php
     if ($review['file_name'] != '') {
