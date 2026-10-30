@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/session_bootstrap.php';
+require_once __DIR__ . '/csrf_helper.php';
 
 if (!isset($_SESSION['login'])) {
     header("Location: index.php");
@@ -14,12 +15,22 @@ if ($_SESSION['role'] != 'admin') {
 
 include "database.php";
 
-//Checks if the form is submitted and then adds the cafe to the database.
+$message = '';
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $cafe_name = $_POST['cafe_name'];
- 
-    $conn->query("INSERT INTO cafes (cafe_name) VALUES ('$cafe_name')");
-    echo "Cafe added.<br>";
+    csrf_verify();
+
+    $cafe_name = trim($_POST['cafe_name'] ?? '');
+
+    if ($cafe_name === '') {
+        $message = "Cafe name is required.";
+    } else {
+        $stmt = $conn->prepare("INSERT INTO cafes (cafe_name) VALUES (?)");
+        $stmt->bind_param("s", $cafe_name);
+        $stmt->execute();
+        $stmt->close();
+        $message = "Cafe added.";
+    }
 }
 
 ?>
@@ -29,7 +40,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <body>
 <h2>Add cafe</h2>
 
+<?php if ($message !== ''): ?>
+    <p><?php echo htmlspecialchars($message, ENT_QUOTES, 'UTF-8'); ?></p>
+<?php endif; ?>
+
 <form action="addcafe.php" method="POST">
+    <input type="hidden" name="csrf_token" value="<?php echo csrf_token(); ?>">
     <label>Cafe name:</label><br>
     <input type="text" name="cafe_name" required><br><br>
     <input type="submit" value="Add cafe">

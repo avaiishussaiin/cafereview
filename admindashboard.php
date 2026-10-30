@@ -1,22 +1,19 @@
 <?php
 
 require_once __DIR__ . '/session_bootstrap.php';
+require_once __DIR__ . '/csrf_helper.php';
 
 if (!isset($_SESSION['login'])) {
     header("Location: index.php");
     exit;
 }
 
-// Admin pages need the admin role; a normal account cannot use this page.
 if ($_SESSION['role'] != 'admin') {
     die("Admin users only. <a href='cafelist.php'>Cafe list</a>");
 }
 
 include "database.php";
 
-/*Get all reviews with the username and cafe name. Connects the reviews table 
-with the users and cafes tables to get the necessary information. 
-then orders it by review_id in desc order so the latest reviews are shown first.*/
 $sql = "SELECT reviews.*, users.username, cafes.cafe_name FROM reviews
         JOIN users ON reviews.user_id=users.user_id
         JOIN cafes ON reviews.cafe_id=cafes.cafe_id
@@ -41,14 +38,24 @@ if ($reviews->num_rows == 0) {
 }
 
 while ($review = $reviews->fetch_assoc()) {
-    // INSECURE: the same unescaped review content is also shown to the admin.
-    echo "<p><b>" . $review['cafe_name'] . "</b> - " . $review['username'] . "</p>";
-    echo "<p>" . $review['review_text'] . "</p>";
+    $safeCafe = htmlspecialchars($review['cafe_name'], ENT_QUOTES, 'UTF-8');
+    $safeUser = htmlspecialchars($review['username'], ENT_QUOTES, 'UTF-8');
+    $safeText = htmlspecialchars($review['review_text'], ENT_QUOTES, 'UTF-8');
+
+    echo "<p><b>" . $safeCafe . "</b> - " . $safeUser . "</p>";
+    echo "<p>" . $safeText . "</p>";
+
     if ($review['file_name'] != '') {
-        echo "<p><a href='uploads/" . $review['file_name'] . "'>View uploaded file</a></p>";
+
+        $safeFile = rawurlencode($review['file_name']);
+        $safeFileLabel = htmlspecialchars($review['file_name'], ENT_QUOTES, 'UTF-8');
+        echo "<p><a href='uploads/" . $safeFile . "'>View uploaded file (" . $safeFileLabel . ")</a></p>";
     }
-    echo "<a href='admindeletereview.php?id=" . $review['review_id'] . "'>Delete this review</a>";
-    // Creates the gaps/lines between the reviews
+
+    $deleteUrl = "admindeletereview.php?id=" . urlencode((string) $review['review_id'])
+        . "&csrf_token=" . urlencode(csrf_token());
+    echo "<a href='" . htmlspecialchars($deleteUrl, ENT_QUOTES, 'UTF-8') . "' onclick=\"return confirm('Delete this review?');\">Delete this review</a>";
+
     echo "<hr>";
 }
 ?>
